@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>hammad</h1>
+
+<div class="main">
+    <div>
+        <label >Full Name: </label>
+    <input type="text" name="name" id="name" placeholder="Enter your Name">
+</div>
+        <div>
+            <label >Email: </label>
+        <input type="email" name="email" id="email" placeholder="Enter your Email">
+    </div>
+    <div>
+        <label >Password: </label>
+    <input type="password" name="password" id="password" placeholder="Enter your password">
+</div>
+
+<button class="submit-btn" onclick="signupCall()">
+Sign Up
+</button>
+
+   <button class="submit-btn" onclick="signInCall()">
+    Sign In
+    </button>
+
+    <button class="submit-btn" onclick="createData()">
+        Create Data
+        </button>
+        
+        <button class="submit-btn" onclick="readData()">
+            readData
+            </button>
+            <button class="submit-btn" onclick="deleteData()">
+                deleteData
+                </button>
+                <button class="submit-btn" onclick="updateData()">
+                    updateData
+                    </button>
+
+                   <ul id="list"></ul>
+         
+</div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore-compat.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
